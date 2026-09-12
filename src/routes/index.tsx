@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Download, FileText, Printer } from "lucide-react";
+import { Download, FileText, Printer, Smartphone, Monitor, FolderArchive } from "lucide-react";
 import type { ReactNode } from "react";
 
 export const Route = createFileRoute("/")({ component: Home });
@@ -7,6 +7,9 @@ export const Route = createFileRoute("/")({ component: Home });
 const FILES = {
   editDocx: "/downloads/Rabeya_Coaching_Center_Class5_English_SMT04.docx",
   printPdf: "/downloads/Rabeya_Coaching_Center_Class5_English_SMT04.pdf",
+  apk: "/downloads/Class5-English-SMT04.apk",
+  exe: "/downloads/Class5-English-SMT04.exe",
+  zip: "/downloads/Class5-English-SMT04-offline.zip",
 };
 
 const PAGES = [
@@ -34,26 +37,47 @@ function Home() {
             </p>
           </div>
           <p className="max-w-sm text-xs leading-relaxed text-[#f0d7b0] sm:text-right">
-            A4 size, 2 page. Word file fully editable — lock nai. Print hole A4 portrait, 2 page.
+            A4, 2 page, fully offline. Android APK, Windows EXE, Word ar PDF — internet chara kaj kore.
           </p>
         </div>
       </header>
 
       <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
-        <section className="grid gap-3 sm:grid-cols-2">
+        <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <DownloadCard
+            href={FILES.apk}
+            icon={<Smartphone className="size-5" />}
+            title="Android APK — offline"
+            sub="Phone e install koro. Internet lage na. Paper, Word, PDF app-er vitore."
+            cta="Download .apk"
+            primary
+          />
+          <DownloadCard
+            href={FILES.exe}
+            icon={<Monitor className="size-5" />}
+            title="Windows EXE — offline"
+            sub="Double-click korle browser e paper khulbe. Internet lage na."
+            cta="Download .exe"
+          />
+          <DownloadCard
+            href={FILES.zip}
+            icon={<FolderArchive className="size-5" />}
+            title="Offline ZIP — sob file"
+            sub="index.html, exam paper, Word, PDF, source — ekta zip e."
+            cta="Download .zip"
+          />
           <DownloadCard
             href={FILES.editDocx}
             icon={<FileText className="size-5" />}
             title="Word file — edit kora jabe"
-            sub="A4, 2 page, unlocked. Word / Google Docs / WPS e khule text, mark, kichu change koro."
+            sub="A4, 2 page, unlocked. Word / Google Docs / WPS e khule change koro."
             cta="Download .docx"
-            primary
           />
           <DownloadCard
             href={FILES.printPdf}
             icon={<Printer className="size-5" />}
             title="Print PDF — A4, 2 page"
-            sub="A4 portrait. 2 page print. Fold korte hobe na. Photocopy shop-e A4 2 page dilei hoy."
+            sub="A4 portrait. Fold korte hobe na. Shop e bolo: A4, 2 page print."
             cta="Download PDF"
           />
         </section>

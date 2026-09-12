@@ -3,3 +3,9 @@ node_modules/
 .github_repo
 .env
 .env.*
+offline-pack/windows/target/
+artifacts/.tmp/
+artifacts/imagine_images/
+*.pyc
+__pycache__/
+.vercel/
