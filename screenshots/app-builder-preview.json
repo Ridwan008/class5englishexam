@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Rabeya Coaching Center — Class 5 English",
+      "hasCanvas": false,
+      "bodyTextLen": 1254,
+      "bodyTextHash": "fd1fd43eb64d48c6212c1242d1dd6341ffdd3fc0e5bfb7cf5bea62f8e786ea75",
+      "bodyTextPrefix": "RABEYA COACHING CENTER Class Five English Special Model Test 04 ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Rabeya Coaching Center — Class 5 English",
+      "hasCanvas": false,
+      "bodyTextLen": 1254,
+      "bodyTextHash": "fd1fd43eb64d48c6212c1242d1dd6341ffdd3fc0e5bfb7cf5bea62f8e786ea75",
+      "bodyTextPrefix": "RABEYA COACHING CENTER Class Five English Special Model Test 04 ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
